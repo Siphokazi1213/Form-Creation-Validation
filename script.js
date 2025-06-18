@@ -1,5 +1,6 @@
 // Ensure the script runs only after the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+  // Changed to traditional function
   // Select the form element using its ID
   const form = document.getElementById("registration-form");
 
@@ -7,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedbackDiv = document.getElementById("form-feedback");
 
   // Add an event listener for the form's submit event
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", function (event) {
+    // Changed to traditional function
     // Prevent the default form submission behavior (which would reload the page)
     event.preventDefault();
 
