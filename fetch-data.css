@@ -1,0 +1,85 @@
+body {
+  font-family: "Inter", Arial, sans-serif; /* Using Inter font with Arial fallback */
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex; /* Flexbox for centering content */
+  justify-content: center;
+  align-items: flex-start; /* Align to the top of the viewport */
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+  box-sizing: border-box;
+}
+
+#content {
+  max-width: 600px;
+  width: 100%; /* Ensure it takes full width up to max-width */
+  margin: 20px auto; /* Add margin top/bottom and auto for left/right centering */
+  background: white;
+  padding: 30px; /* Increased padding */
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Darker text color */
+  margin-bottom: 25px; /* More space below heading */
+  font-size: 2.2em; /* Larger heading font size */
+}
+
+ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0;
+  margin: 0; /* Remove default ul margin */
+}
+
+li {
+  background-color: #f8f8f8; /* Lighter background for list items */
+  margin: 10px 0; /* Increased vertical margin */
+  padding: 15px; /* Increased padding */
+  border-radius: 6px; /* Rounded corners for list items */
+  border: 1px solid #eee; /* Light border */
+  font-size: 1.1em; /* Slightly larger font for names */
+  color: #555; /* Slightly muted text color */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+li:hover {
+  background-color: #eef; /* Subtle highlight on hover */
+  transform: translateX(5px); /* Slight shift on hover */
+}
+
+/* Style for the loading/error message container */
+#api-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666; /* Muted color for loading/error messages */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  #content {
+    padding: 20px;
+    margin: 10px auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  li {
+    padding: 12px;
+    font-size: 1em;
+  }
+  #api-data {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
